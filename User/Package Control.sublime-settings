@@ -1,0 +1,41 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Anaconda",
+		"Angular2 HTML Syntax",
+		"ayu",
+		"Boxy Theme",
+		"C++ Starting Kit",
+		"Clang Format",
+		"CMake",
+		"CMakeBuilder",
+		"Color Scheme - Vintage Terminal",
+		"Git",
+		"Github Tools",
+		"HTML5",
+		"Indent XML",
+		"JSON Reindent",
+		"LaTeXBox",
+		"Markdown Preview",
+		"MarkdownLivePreview",
+		"MetaQuotes (MQL4) Language Package",
+		"OpenGL Shading Language (GLSL)",
+		"Package Control",
+		"PackageResourceViewer",
+		"Phpcs",
+		"Pretty JSON",
+		"PyRefactor",
+		"Python Breakpoints",
+		"Python Completions",
+		"Sass",
+		"SASS Snippets",
+		"Theme - Alpenglow",
+		"Theme - Minimist",
+		"Theme - SoDaReloaded"
+	]
+}

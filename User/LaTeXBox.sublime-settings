@@ -1,0 +1,19 @@
+{
+	"cmd":
+	[
+		"latexmk",
+		"-quiet",
+		"-pdfps",
+		"-e",
+		"$latex = 'latex %O -interaction=nonstopmode --shell-escape -synctex=1 %S'"
+	],
+	"cmd_force":
+	[
+		"latexmk",
+		"-g",
+		"-quiet",
+		"-pdfps",
+		"-e",
+		"$latex = 'latex %O -interaction=nonstopmode --shell-escape -synctex=1 %S'"
+	]
+}
