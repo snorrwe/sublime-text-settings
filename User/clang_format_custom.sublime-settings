@@ -24,5 +24,7 @@
     "ConstructorInitializerAllOnOneLineOrOnePerLine": true,
     "IndentWidth": 4,
     "AccessModifierOffset": -4,
-    "AllowShortIfStatementsOnASingleLine": true
+    "AllowShortIfStatementsOnASingleLine": true,
+    "DerivePointerAlignment": false,
+    "PointerAlignment": "Left"
 }
