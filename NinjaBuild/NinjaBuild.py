@@ -18,10 +18,6 @@ class NinjaBuildCommand(sublime_plugin.WindowCommand):
         except (AttributeError, KeyError):
             current_file_name = self.window.active_view().file_name()
             config["working_dir"] = self.directory_of_file(current_file_name)
-        except:
-            sublime.error_message(
-                "Unexpected error happened in the NinjaBuild plugin!")
-            raise
         return config
 
     def build(self, settings):
@@ -38,6 +34,11 @@ class NinjaBuildCommand(sublime_plugin.WindowCommand):
         print("Result: {0}", self.window.run_command("exec", build_system))
 
     def run(self):
-        settings = self.read_configurations()
-        if settings:
-            self.build(settings)
+        try:
+            settings = self.read_configurations()
+            if settings:
+                self.build(settings)
+        except:
+            sublime.error_message(
+                "Unexpected error happened in the NinjaBuild plugin!")
+            raise
