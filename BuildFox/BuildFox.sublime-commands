@@ -1,0 +1,12 @@
+[
+    {
+        "caption": "BuildFox: Configure",
+        "command": "build_fox",
+        "args": {"build": false}
+    },
+    {
+        "caption": "BuildFox: Configure & Build",
+        "command": "build_fox",
+        "args": {"build": true}
+    }
+]

@@ -4,3 +4,4 @@
 !*.sublime-settings
 !NinjaBuild/*
 !plugins.sublime-project
+!BuildFox/*
