@@ -7,16 +7,21 @@ from os.path import sep as separator
 
 class NinjaBuildCommand(sublime_plugin.WindowCommand):
 
+    def directory_of_file(self, file):
+        return separator.join(file.split(separator)[:-1])
+
     def read_configurations(self):
         config = {}
         try:
             project_file_name = self.window.project_file_name()
-            config["working_dir"] = separator.join(
-                project_file_name.split(separator)[:-1])
-        except AttributeError:
-            sublime.error_message("Has to be used in a project!")
+            config["working_dir"] = self.directory_of_file(project_file_name)
+        except (AttributeError, KeyError):
+            current_file_name = self.window.active_view().file_name()
+            config["working_dir"] = self.directory_of_file(current_file_name)
         except:
-            sublime.error_message("Unexpected error happened!")
+            sublime.error_message(
+                "Unexpected error happened in the NinjaBuild plugin!")
+            raise
         return config
 
     def build(self, settings):
@@ -34,4 +39,5 @@ class NinjaBuildCommand(sublime_plugin.WindowCommand):
 
     def run(self):
         settings = self.read_configurations()
-        self.build(settings)
+        if settings:
+            self.build(settings)
