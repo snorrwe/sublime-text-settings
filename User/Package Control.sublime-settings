@@ -6,7 +6,6 @@
 	"installed_packages":
 	[
 		"A File Icon",
-		"Angular2 HTML Syntax",
 		"AutoPEP8",
 		"ayu",
 		"Boxy Theme",
@@ -24,6 +23,7 @@
 		"Markdown Preview",
 		"MarkdownLivePreview",
 		"MetaQuotes (MQL4) Language Package",
+		"Ngx HTML",
 		"OpenGL Shading Language (GLSL)",
 		"Package Control",
 		"PackageResourceViewer",
@@ -34,6 +34,7 @@
 		"Python Completions",
 		"Sass",
 		"SASS Snippets",
+		"sublime-text-2-buildview",
 		"Theme - Alpenglow",
 		"Theme - Minimist",
 		"Theme - SoDaReloaded"
