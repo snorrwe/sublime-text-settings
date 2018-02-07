@@ -10,10 +10,10 @@
         "AfterEnum":              true,
         "AfterFunction":          true,
         "AfterNamespace":         true,
-        "AfterObjCDeclaration":   true,
+        "AfterObjCDeclaration":   true, 
         "AfterStruct":            true,
         "AfterUnion":             true,
-        "BeforeCatch":            true,
+        "BeforeCatch":            true, 
         "BeforeElse":             true,
         "IndentBraces":           false,
         "SplitEmptyFunction":     true,
@@ -26,5 +26,14 @@
     "AccessModifierOffset": -4,
     "AllowShortIfStatementsOnASingleLine": true,
     "DerivePointerAlignment": false,
-    "PointerAlignment": "Left"
+    "PointerAlignment": "Left",
+    "MaxEmptyLinesToKeep": 1,
+    "KeepEmptyLinesAtTheStartOfBlocks": false,
+    "Cpp11BracedListStyle": true,
+    "ContinuationIndentWidth": 4,
+    "ConstructorInitializerAllOnOneLineOrOnePerLine": true,
+    "BreakBeforeBinaryOperators": "All",
+    "AlwaysBreakTemplateDeclarations": true,
+    "AllowShortLoopsOnASingleLine": true,
+    "AlignAfterOpenBracket": "Align"
 }
